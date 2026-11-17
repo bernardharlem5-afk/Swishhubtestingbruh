@@ -1,5 +1,5 @@
 -- ============================================================
--- FATAL LABS — Arcade Basketball + Basketball Legends + Hoopz
+-- Project Nova — Arcade Basketball + Basketball Legends + Hoopz
 -- ============================================================
 
 local _print, _warn = print, warn
@@ -2314,7 +2314,7 @@ end)
     end
     setupOwnNameplateListener()
 
-    local Window = Airflow:CreateWindow({Name = "Swish Hub", LoadingSubtitle = "Number one concern is customer satisfaction.", Theme = "FatalBlue", ToggleUIKeybind = "RightControl", ConfigurationSaving = {Enabled = true, FolderName = "FatalLabs", FileName = "FatalLabs"}})
+    local Window = Airflow:CreateWindow({Name = "Project Nova", LoadingSubtitle = "Project Nova Is loaded", Theme = "FatalBlue", ToggleUIKeybind = "RightControl", ConfigurationSaving = {Enabled = true, FolderName = "FatalLabs", FileName = "FatalLabs"}})
 
     Notify = function(props) Window:Notify(props) end
 
@@ -2608,7 +2608,7 @@ end)
         Callback = function(v) s.Visuals.HideOwnNameplate = v; applyOwnNameplate() end,
     })
     VisualsTab:CreateInput({
-        Name = "Custom username", Placeholder = "e.g. Swish",
+        Name = "Custom username", Placeholder = "e.g. Nova",
         CurrentValue = s.Visuals.CustomNameText, Flag = "fatal_np_name",
         Callback = function(text)
             s.Visuals.CustomNameText = text
@@ -2626,7 +2626,7 @@ end)
         end,
     })
     VisualsTab:CreateInput({
-        Name = "Custom title", Placeholder = "e.g. Swish Elite",
+        Name = "Custom title", Placeholder = "e.g. Nova Elite",
         CurrentValue = s.Visuals.CustomTitleText, Flag = "fatal_np_title",
         Callback = function(text)
             s.Visuals.CustomTitleText = text
